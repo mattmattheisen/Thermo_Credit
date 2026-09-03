@@ -1,1 +1,4 @@
-
+interface:
+  display_name: "Treasury Market Stress"
+  short_description: "Classify Treasury repricing versus market dysfunction"
+  default_prompt: "Assess Treasury market functioning using transparent, point-in-time evidence across volatility, liquidity, funding, auctions, settlement, and intermediation."
