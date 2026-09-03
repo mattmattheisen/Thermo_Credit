@@ -186,11 +186,26 @@ Evidence against the classification:
 Data warnings:
 - ...
 
-Then paste this second command:
+- ...
+```
 
-```bash
-cat > .agents/skills/treasury-market-stress/agents/openai.yaml <<'EOF'
-interface:
-  display_name: "Treasury Market Stress"
-  short_description: "Classify Treasury repricing versus market dysfunction"
-  default_prompt: "Assess Treasury market functioning using transparent, point-in-time evidence across volatility, liquidity, funding, auctions, settlement, and intermediation."
+Also expose:
+- data freshness;
+- missing/stale inputs;
+- current raw observations;
+- normalized historical context;
+- pillar scores/states;
+- historical analogues;
+- limitations;
+- concise plain-English interpretation.
+
+## Completion Check
+
+Before finalizing, confirm that:
+- the conclusion was not assumed in advance;
+- price, volatility, and market function were kept distinct;
+- weak or missing data were surfaced;
+- the state requires breadth/persistence rather than one dramatic series;
+- at least one negative control is part of validation;
+- null findings and counterevidence are reported;
+- the result is reproducible from documented inputs and rules.
